@@ -3,6 +3,10 @@ tasks:
   - name: utils
     before: |
       sudo apt-get install tree
+  - name: sdk
+    before: |
+      cd ./s3/sdk/php
+      composer install
   # https://learn.microsoft.com/ru-ru/powershell/scripting/install/install-ubuntu?view=powershell-7.4
   # https://docs.aws.amazon.com/powershell/latest/userguide/pstools-getting-set-up-linux-mac.html
   # https://docs.aws.amazon.com/powershell/latest/reference/
